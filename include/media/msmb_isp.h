@@ -41,7 +41,7 @@ struct msm_isp32_event_data32 {
 		struct msm_isp32_error_info error_info;
 	} u;
 };
-
 #endif
-#endif /* __MSMB_ISP__ */
-#endif /* XIAOMI_LAND */
+
+#endif 
+

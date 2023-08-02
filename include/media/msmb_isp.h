@@ -9,18 +9,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#ifdef CONFIG_MACH_XIAOMI
-#ifdef CONFIG_MACH_XIAOMI_MSM8937
-#ifdef CONFIG_MACH_XIAOMI_LAND
-#include "msmb_isp-land.h"
-#endif /* CONFIG_MACH_XIAOMI_LAND */
-#endif /* CONFIG_MACH_XIAOMI_MSM8937 */
-#ifdef CONFIG_MACH_XIAOMI_MSM8940
-#ifdef CONFIG_MACH_XIAOMI_SANTONI
-#include "msmb_isp-santoni.h"
-#endif /* CONFIG_MACH_XIAOMI_SANTONI */
-#endif /* CONFIG_MACH_XIAOMI_MSM8940 */
-#else
+
 #ifndef __MSMB_ISP__
 #define __MSMB_ISP__
 

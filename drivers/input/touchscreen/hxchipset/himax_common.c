@@ -20,6 +20,10 @@
 #define TS_WAKE_LOCK_TIMEOUT		(2 * HZ)
 #define FRAME_COUNT 5
 
+#ifdef CONFIG_TOUCHSCREEN_HIMAX_DEBUG
+#include "himax_debug.h"
+#endif
+
 #if defined(HX_AUTO_UPDATE_FW)
 	char *i_CTPM_firmware_name = "HX83100_Amber_0B01_030E.bin";
 	const struct firmware *i_CTPM_FW = NULL;

@@ -16,6 +16,9 @@
 #include "himax_common.h"
 #include "himax_ic.h"
 
+#ifdef CONFIG_TOUCHSCREEN_HIMAX_DEBUG
+#include "himax_debug.h"
+
 #define SUPPORT_FINGER_DATA_CHECKSUM 0x0F
 #define TS_WAKE_LOCK_TIMEOUT		(2 * HZ)
 #define FRAME_COUNT 5

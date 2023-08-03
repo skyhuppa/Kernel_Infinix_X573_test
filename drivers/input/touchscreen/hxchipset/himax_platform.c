@@ -21,9 +21,9 @@
 
 int i2c_error_count;
 int irq_enable_count;
-{
+
 active_tp_setup(himax);
-}
+
 int himax_dev_set(struct himax_ts_data *ts)
 
 	int ret = 0;

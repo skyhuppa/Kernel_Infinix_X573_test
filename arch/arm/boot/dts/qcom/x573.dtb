@@ -16,7 +16,11 @@
 #include "x573.dtsi"
 
 / {
-	model = "Qualcomm Technologies, Inc. X573 SoC";
-	compatible = "qcom,x573";
-	qcom,board-id = <0 0>;
+	model = "Qualcomm Technologies, Inc. MSM8937 BASE";
+	compatible = "qcom,msm8937-base\0qcom,msm8937\0qcom,base";
+	qcom,msm-id = <0x126 0x00>;
+	interrupt-parent = <0x01>;
+	qcom,board-id = <0x1f40 0x00>;
+	huaqin,modem-id = <0xf3b20001 0x00>;
+	qcom,pmic-id = <0x10019 0x00 0x00 0x00>;
 };

@@ -44,7 +44,6 @@ static int hx_point_num; /*for himax_ts_work_func use*/
 static int p_point_num = 0xFFFF;
 static int tpd_key = 0x00;
 static int tpd_key_old = 0x00;
-static int probe_fail_flag;
 static bool config_load;
 static struct himax_config *config_selected;
 

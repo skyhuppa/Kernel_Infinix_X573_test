@@ -1702,9 +1702,6 @@ err_create_wq_failed:
 err_ic_package_failed:
 return false;
 }
-
-int himax_chip_common_probe(struct i2c_client *client,
-const struct i2c_device_id *id)
 {
 	int err = 0;
 	struct himax_ts_data *ts;
@@ -1755,12 +1752,6 @@ const struct i2c_device_id *id)
 #ifdef HX_RST_PIN_FUNC
 	ts->rst_gpio = pdata->gpio_reset;
 #endif
-
-	himax_gpio_power_config(ts->client, pdata);
-
-	err = himax_ts_pinctrl_init(ts);
-	if (err || ts->ts_pinctrl == NULL)
-		E(" Pinctrl init failed\n");
 
 #ifndef CONFIG_OF
 	if (pdata->power) {

@@ -1706,7 +1706,6 @@ err_create_wq_failed:
 err_ic_package_failed:
 return false;
 }
-{
 	int err = 0;
 	struct himax_ts_data *ts;
 	struct himax_i2c_platform_data *pdata;

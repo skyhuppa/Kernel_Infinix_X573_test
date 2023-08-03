@@ -16,7 +16,6 @@
 
 #include "himax_common.h"
 #include "himax_ic_core.h"
-#include "himax_platform.h"
 
 #ifdef CONFIG_TOUCHSCREEN_HIMAX_DEBUG
 #include "himax_debug.h"

@@ -21,11 +21,11 @@
 
 int i2c_error_count;
 int irq_enable_count;
-
-active_tp_setup(himax);
-
-int himax_dev_set(struct himax_ts_data *ts)
 {
+active_tp_setup(himax);
+}
+int himax_dev_set(struct himax_ts_data *ts)
+
 	int ret = 0;
 
 	ts->input_dev = input_allocate_device();

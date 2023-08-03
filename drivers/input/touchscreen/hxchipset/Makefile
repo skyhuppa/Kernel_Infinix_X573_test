@@ -1,8 +1,8 @@
 # Makefile for the Himax touchscreen drivers.
-obj-$(CONFIG_TOUCHSCREEN_HIMAX_ONCELL)     += himax_ic.o
+obj-$(CONFIG_TOUCHSCREEN_HIMAX_ONCELL)     += himax_ic_oncell_core.o
 obj-$(CONFIG_TOUCHSCREEN_HIMAX_IC_HX852xH) += himax_ic_HX852xH.o
 obj-$(CONFIG_TOUCHSCREEN_HIMAX_IC_HX852xG) += himax_ic_HX852xG.o
-obj-$(CONFIG_TOUCHSCREEN_HIMAX_INCELL)     += himax_ic.o
+obj-$(CONFIG_TOUCHSCREEN_HIMAX_INCELL)     += himax_ic_incell_core.o
 obj-$(CONFIG_TOUCHSCREEN_HIMAX_IC_HX83191) += himax_ic_HX83191.o
 obj-$(CONFIG_TOUCHSCREEN_HIMAX_IC_HX83112) += himax_ic_HX83112.o
 obj-$(CONFIG_TOUCHSCREEN_HIMAX_IC_HX83111) += himax_ic_HX83111.o

@@ -14,7 +14,7 @@
  *
  */
 
-#include "himax_ic_core.h"
+#include "himax_ic.h"
 
 struct himax_core_command_operation *g_core_cmd_op;
 struct ic_operation *pic_op;

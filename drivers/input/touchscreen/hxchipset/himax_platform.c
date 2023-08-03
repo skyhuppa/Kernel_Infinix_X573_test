@@ -16,7 +16,7 @@
 
 #include "himax_platform.h"
 #include "himax_common.h"
-#include "himax_ic.h"
+#include "himax_ic_core.h"
 #include "linux/moduleparam.h"
 
 int i2c_error_count;

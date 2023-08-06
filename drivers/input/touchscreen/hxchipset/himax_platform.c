@@ -966,3 +966,4 @@ module_exit(himax_common_exit);
 
 MODULE_DESCRIPTION("Himax_common driver");
 MODULE_LICENSE("GPL v2");
+

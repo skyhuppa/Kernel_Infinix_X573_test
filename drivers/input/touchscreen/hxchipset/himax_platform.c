@@ -795,7 +795,7 @@ int himax_chip_common_probe(struct i2c_client *client, const struct i2c_device_i
 
 	D("%s:Enter\n", __func__);
 
-	if (himax_check_assigned_tp(dt, "compatible",
+	if (himax_check_assigned_ts(dt, "compatible",
 		"qcom,i2c-touch-active") < 0)
 		goto err_dt_not_match;
 	/* Check I2C functionality */

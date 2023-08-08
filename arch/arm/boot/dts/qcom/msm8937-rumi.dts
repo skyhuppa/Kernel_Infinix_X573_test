@@ -14,6 +14,7 @@
 /dts-v1/;
 
 #include "msm8937.dtsi"
+#include "msm8937_X573.dtsi"
 
 / {
 	model = "Qualcomm Technologies, Inc. MSM8937 RUMI";

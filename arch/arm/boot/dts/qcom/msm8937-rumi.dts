@@ -13,4 +13,4 @@
 
 /dts-v1/;
 
-#include "msm8937_X573.dtsi"
+#include "msm8937-X573.dtsi"

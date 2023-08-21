@@ -15,7 +15,7 @@
 
 /memreserve/ 0x90000000 0x00000200;
 
-#include "msm8917_X573.dtsi"
+#include "msm8917-X573.dtsi"
 #include "msm8917.dtsi"
 
 / {

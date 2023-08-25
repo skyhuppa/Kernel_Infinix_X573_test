@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0
-dtb-$(CONFIG_ARM64) += msm8937.dtb
+# dtb-$(CONFIG_ARM64) += msm8937.dtb
 
 dtb-$(CONFIG_ARCH_MSMCOBALT) += msmcobalt-sim.dtb \
 	msmcobalt-rumi.dtb \

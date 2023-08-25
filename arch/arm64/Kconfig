@@ -396,7 +396,7 @@ config MACH_XIAOMI_SANTONI
 config MSM8937_MSM8917_TECNO_DTB
 	bool "Enable Support for Infinix MSM8937 Devices"
 	select ARCH_MSM8937
-    select ARCH_MSM8917
+        select ARCH_MSM8917
 	help
 	  This enables support for Infinix MSM8937 devices.
 

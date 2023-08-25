@@ -16,8 +16,9 @@ dtb-y += $(addsuffix .dtb, $(notdir $(subst $\",,$(CONFIG_BUILD_ARM64_APPENDED_D
 endif
 
 ifeq ($(strip $(CONFIG_MSM8937_MSM8917_TECNO_DTB)), y)
- dtb-y += $(addsuffix .dtb, $(notdir $(subst $\",,$(CONFIG_MSM8937_MSM8917_TECNO_DTB))))
-                                             
+dtb-y += $(addsuffix .dtb, $(notdir $(subst $\",,$(CONFIG_MSM8937_MSM8917_TECNO_DTB))))
+endif
+
 targets  += $(dtb-y)
 always   := $(dtb-y)
 subdir-y := $(dts-dirs)

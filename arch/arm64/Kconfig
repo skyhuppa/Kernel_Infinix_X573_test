@@ -567,6 +567,14 @@ config ARM64_ERRATUM_843419
 	  If unsure, say Y.
 endmenu
 
+config MSM8937_MSM8917_TECNO_DTB
+	bool "Enable Support for Xiaomi MSM8937 Devices"
+	select MACH_XIAOMI
+	select ARCH_MSM8937
+	help
+	  This enables support for Xiaomi MSM8937 devices.
+
+
 choice
 	prompt "Page size"
 	default ARM64_4K_PAGES

@@ -568,12 +568,12 @@ config ARM64_ERRATUM_843419
 endmenu
 
 config MSM8937_MSM8917_TECNO_DTB
-	bool "Enable Support for Xiaomi MSM8937 Devices"
-	select MACH_XIAOMI
+	bool "Enable Support for Infinix Devices"
 	select ARCH_MSM8937
+	select ARCH_MSM8917
 	help
 	  This enables support for Xiaomi MSM8937 devices.
-
+endmenu
 
 choice
 	prompt "Page size"

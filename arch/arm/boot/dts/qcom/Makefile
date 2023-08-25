@@ -14,9 +14,8 @@ ifeq ($(strip $(CONFIG_BUILD_ARM64_APPENDED_DTB_IMAGE)), y)
 dtb-y += $(addsuffix .dtb, $(notdir $(subst $\",,$(CONFIG_BUILD_ARM64_APPENDED_DTB_IMAGE_NAMES))))
 endif
 
-ifeq ($(strip $(CONFIG_MSM8937_MSM8917_TECNO_DTB)), y)
-dtb-y += $(addsuffix .dtb, $(notdir $(subst $\",,$(CONFIG_MSM8937_MSM8917_TECNO_DTB))))
-endif
+ dtb-$(CONFIG_MSM8937_MSM8917_TECNO_DTB) += msm8937-X573.dtb \
+                                            msm8917-X573.dtb 
 
 targets  += $(dtb-y)
 always   := $(dtb-y)

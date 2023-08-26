@@ -21,17 +21,8 @@ dtb-$(CONFIG_ARCH_MSMCOBALT) += msmcobalt-sim.dtb \
 # dtb-y += $(addsuffix .dtb, $(notdir $(subst $\",,$(CONFIG_MSM8937_MSM8917_TECNO_DTB))))
 # endif
 
-ifeq ($(CONFIG_ARM64),y)
-always          := $(dtb-y)
-subdir-y        := $(dts-dirs)
-else
-targets += dtbs
-targets += $(addprefix ../, $(dtb-y))
+targets  += $(dtb-y)
+always   := $(dtb-y)
+subdir-y := $(dts-dirs)
 
-$(obj)/../%.dtb: $(src)/%.dts FORCE
-        $(call if_changed_dep,dtc)
-
-dtbs: $(addprefix $(obj)/,$(dtb-y))
-endif
 clean-files := *.dtb
-endif

@@ -3,7 +3,6 @@
 #include "skeleton64.dtsi"
 #include <dt-bindings/clock/msm-clocks-8952.h>
 #include <dt-bindings/regulator/qcom,rpm-smd-regulator.h>
-#include "msm8917-X573.dtsi"
 
 / {
 	#address-cells = <0x2>;

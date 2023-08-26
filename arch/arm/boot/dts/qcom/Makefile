@@ -1,7 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
-dtb-$(CONFIG_ARCH_MSM8937) += msm8937-X573.dtb 
-
-dtb-$(CONFIG_ARCH_MSM8917) += msm8917-X573.dtb                  
+dtb-$(CONFIG_ARCH_MSM8937) += msm8937-X573.dtb \
+                              msm8917-X573.dtb                  
 
 dtb-$(CONFIG_MSM_GVM_QUIN) += vplatform-lfv-msm8996.dtb
 

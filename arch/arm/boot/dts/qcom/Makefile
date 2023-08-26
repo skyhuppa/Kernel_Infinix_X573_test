@@ -16,10 +16,6 @@ dtb-$(CONFIG_ARCH_MSMCOBALT) += msmcobalt-sim.dtb \
  dtb-y += $(addsuffix .dtb, $(notdir $(subst $\",,$(CONFIG_BUILD_ARM64_APPENDED_DTB_IMAGE_NAMES))))
  endif
 
- ifeq ($(strip $(CONFIG_MSM8937_MSM8917_TECNO_DTB)), y)
- dtb-y += $(addsuffix .dtb, $(notdir $(subst $\",,$(CONFIG_MSM8937_MSM8917_TECNO_DTB))))
- endif
-
 targets  += $(dtb-y)
 always   := $(dtb-y)
 subdir-y := $(dts-dirs)

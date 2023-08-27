@@ -134,9 +134,6 @@
 #define FLASH_SUBTYPE_DUAL					0x01
 #define FLASH_SUBTYPE_SINGLE					0x02
 
-#define qpnp_flash_led_brightness_set(wt_flash_flashlight(true))	\
-	(wt_flash_flashlight(false))
-
 /*
  * ID represents physical LEDs for individual control purpose.
  */

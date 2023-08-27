@@ -1900,11 +1900,10 @@ static void qpnp_flash_led_brightness_set(struct led_classdev *led_cdev,
 	if (!strcmp(flash_node->cdev.name, "flashlight")) {
 		pr_info("wt_flash_flashlight  enter value=%d\n", value);
 		if (value > 0) {
-			wt_flash_flashlight(true);
+			
 			wake_lock(&led->flashlight_led_lock);
 		} else {
-			wt_flash_flashlight(false);
-			wake_unlock(&led->flashlight_led_lock);
+		        wake_unlock(&led->flashlight_led_lock);
 		}
 	}
 

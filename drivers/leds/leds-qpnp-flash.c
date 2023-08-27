@@ -134,6 +134,14 @@
 #define FLASH_SUBTYPE_DUAL					0x01
 #define FLASH_SUBTYPE_SINGLE					0x02
 
+#define has_flash_op(fled_cdev, op)				\
+	(fled_cdev && fled_cdev->ops->op)
+
+#define call_flash_op(fled_cdev, op, args...)		\
+	((has_flash_op(fled_cdev, op)) ?			\
+			(fled_cdev->ops->op(fled_cdev, args)) :	\
+			-EINVAL)
+
 /*
  * ID represents physical LEDs for individual control purpose.
  */

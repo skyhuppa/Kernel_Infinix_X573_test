@@ -10953,3 +10953,5 @@
 		method = "smc";
 	};
 };
+
+#include "msm8917-X573.dts"

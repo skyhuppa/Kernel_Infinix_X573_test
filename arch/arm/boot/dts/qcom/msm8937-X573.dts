@@ -1,6 +1,9 @@
 /dts-v1/;
 
 #include "skeleton64.dtsi"
+#include <dt-bindings/clock/msm-clocks-8952.h>
+#include <dt-bindings/regulator/qcom,rpm-smd-regulator.h>
+
 
 / {
 	#address-cells = <0x2>;

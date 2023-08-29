@@ -393,7 +393,7 @@ config MACH_XIAOMI_SANTONI
 	help
 	  This enables support for Xiaomi Redmi 4/4X(santoni).
 
-config MSM8937_MSM8917_TECNO_DTB
+config MSM8937_MSM8917_INFINIX_DTB
 	bool "Enable Support for Infinix MSM8937 Devices"
 	select ARCH_MSM8937
 	select ARCH_MSM8917

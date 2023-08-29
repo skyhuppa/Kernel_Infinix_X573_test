@@ -1,6 +1,6 @@
 header-y += ais/
 header-y += msm_cam_sensor.h
-header-y += msm_cam_sensor-land.h
+header-y += msm_cam_sensor-X573.h
 header-y += msm_camera.h
 header-y += msm_camsensor_sdk.h
 header-y += msm_fd.h
@@ -20,6 +20,6 @@ header-y += msmb_isp.h
 header-y += msmb_isp-X573.h
 header-y += msmb_ispif.h
 header-y += msmb_pproc.h
-header-y += msmb_pproc-land.h
+header-y += msmb_pproc-X573.h
 header-y += radio-iris.h
 header-y += radio-iris-commands.h

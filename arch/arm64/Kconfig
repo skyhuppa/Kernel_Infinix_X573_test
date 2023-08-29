@@ -406,6 +406,11 @@ config MSM8937_MSM8917_INFINIX_DTB
 	help
 	  This enables support for Infinix MSM8937 devices.
 
+config MSM8937_MSM8917_X573
+	bool "Enable Support for Infinix Hot S3(X573)"
+	select MSM8937_MSM8917_X573_DTB
+	help
+	  This enables support for Infinix Hot S3(X573)"
 
 endmenu
 

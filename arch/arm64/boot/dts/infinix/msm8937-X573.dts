@@ -10947,7 +10947,9 @@
 		compatible = "arm,psci-1.0";
 		method = "smc";
 	};
+};
 
+/ {
 	qrd_batterydata: qcom,battery-data {
 		qcom,batt-id-range-pct = <15>;
 		#include "X573/batterydata-qrd-Desay-4v4-4000mah.dtsi"

@@ -44,6 +44,5 @@ struct msm_isp32_event_data32 {
 #endif
 
 #endif /* __MSMB_ISP__ */
-#endif /* XIAOMI_LAND */
 #endif 
 
